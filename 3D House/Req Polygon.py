@@ -96,7 +96,7 @@ fig = go.Figure(data=[
 fig.show()
 
 """
-address = 'Snoekstraat 35, 900 Gent'
+address = 'nze-Lieve-Vrouwstraat 3, 2220 Heist-op-den-Berg'
 req = requests.get(f"http://loc.geopunt.be/geolocation/location?q={address}&c=1")
 print(req.text)
 
