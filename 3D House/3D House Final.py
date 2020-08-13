@@ -100,7 +100,7 @@ def dim_house(poly : List[Dict[str,List[float]]] , mask_chm: np.ndarray) -> Dict
     polygon = Polygon(poly[0]['coordinates'][0])
     """
     I need to exclude 0 values from my masked CHM array to calculate a mean height  so I use numpy mask for masking
-    the 0's and hereby create the array 'noZeros', sonp.mean(noZeros) will calculate mean height
+    the 0's and hereby create the array 'noZeros', so np.mean(noZeros) will calculate mean height
     """
     noZeros = ma.masked_values(mask_chm, 0)
     """
